@@ -1,0 +1,24 @@
+#redis 相关配置
+#使用默认客户端 lettuce
+spring:
+  application:
+      name: lktbz-springboot-redis-demo
+  redis:
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    host: 192.168.5.145
+    port: 6379
+
+server:
+    port: 8082
+
+
+
+
+
+
+
